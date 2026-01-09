@@ -23,12 +23,11 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v4
 
-           - name: Setup java
+      - name: Setup java
         uses: actions/setup-java@v4
         with:
           distribution: "zulu"
           java-version: "18"
-
 
       # 7.
       - name: Set up Flutter
@@ -76,4 +75,3 @@ jobs:
           path: |
             build/app/outputs/flutter-apk/app-release.apk
             build/ios_build.tar.gz
-
